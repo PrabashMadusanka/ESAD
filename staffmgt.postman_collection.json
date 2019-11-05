@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "e3bcc76c-c186-41c4-b79a-55782ec13755",
+		"name": "staffmgt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/staffmgt/Staffmember/addStaffMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"StaffName\":\"Kasun Perera\",\r\n\"EmpNo\":\"85695\",\r\n\"JoinDate\":\"2018-02-06\",\r\n\"Dob\":\"1996-02-03\",\r\n\"Emailaddress\":\"kasunp@sliit.lk\",\r\n\"Address\":\"Colombo, Sri Lanka\",\r\n\"Isdeleted\":0,\r\n\"IsActive\":1,\r\n\"LogInfo\":\"2019-11-04\",\r\n\"LibraryId\":1,\r\n\"DesignationID\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addStaffMember",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"addStaffMember"
+					]
+				},
+				"description": "Add staff member"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/staffmgt/Staffmember/addDesignation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"DesignationID\" : 2,\r\n\"DesignationName\" : \"Assistant\",\r\n\"Isdeleted\":0,\r\n\"IsActive\":1,\r\n\"LogInfo\":\"Created : 2019-11-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addDesignation",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"addDesignation"
+					]
+				},
+				"description": "Add Designation to the system"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/staffmgt/Staffmember/updateStaffMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"StaffID\" : 1,\r\n\"StaffName\":\"Nadun Perera\",\r\n\"EmpNo\":\"85695\",\r\n\"JoinDate\":\"2018-02-06\",\r\n\"Dob\":\"1996-02-03\",\r\n\"Emailaddress\":\"kasunp@sliit.lk\",\r\n\"Address\":\"Colombo, Sri Lanka\",\r\n\"Isdeleted\":1,\r\n\"IsActive\":1,\r\n\"LogInfo\":\"2019-11-04\",\r\n\"LibraryId\":1,\r\n\"DesignationID\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/updateStaffMember",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"updateStaffMember"
+					]
+				},
+				"description": "Update Staff member, to delete update isdeleted flag to 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/staffmgt/Staffmember/selectAllStaffMember",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllStaffMember",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"selectAllStaffMember"
+					]
+				},
+				"description": "Get all isdeleted=0 staff members"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/staffmgt/Staffmember/selectAllDesignation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllDesignation",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"selectAllDesignation"
+					]
+				},
+				"description": "get all not deleted designations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/staffmgt/Staffmember/deleteStaffMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"StaffID\" : 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/deleteStaffMember",
+					"protocol": "https",
+					"host": [
+						"prabashmadusankasl",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"staffmgt",
+						"Staffmember",
+						"deleteStaffMember"
+					]
+				},
+				"description": "permanent delete the staff member"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,46 @@
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\ApplicationInsights.config
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Inquirymgt.dll.config
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Inquirymgt.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Inquirymgt.pdb
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Web.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.WindowsServer.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.ApplicationInsights.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Web.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.AI.WindowsServer.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Microsoft.ApplicationInsights.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.pdb
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Dapper.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\MySql.Data.dll
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\Dapper.xml
+c:\users\user\documents\visual studio 2015\Projects\Inquirymgt\Inquirymgt\bin\MySql.Data.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\ApplicationInsights.config
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Inquirymgt.dll.config
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Inquirymgt.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Inquirymgt.pdb
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Dapper.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Agent.Intercept.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.DependencyCollector.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Web.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.WindowsServer.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.ApplicationInsights.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\MySql.Data.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Dapper.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.DependencyCollector.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.Web.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.AI.WindowsServer.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\Microsoft.ApplicationInsights.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\bin\MySql.Data.xml
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.csprojResolveAssemblyReference.cache
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.dll
+D:\My Studies\MSc\1St Year\2 Sem\ESAD\Group Work\Project\Inquirymgt\Inquirymgt\obj\Debug\Inquirymgt.pdb

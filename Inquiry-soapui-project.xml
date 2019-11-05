@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="650503b6-27ca-42bb-bd3a-5536c92cfd75" activeEnvironment="Default" name="Inquiry" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="cf519a76-b1bb-4b82-9bf5-68b3aa3ffb42" wsaVersion="NONE" name="BasicHttpBinding_IService1" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IService1" soapVersion="1_1" anonymous="optional" definition="http://prabashm-001-site1.btempurl.com/Service1.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://prabashm-001-site1.btempurl.com/Service1.svc?wsdl"><con:part><con:url>http://prabashm-001-site1.btempurl.com/Service1.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Inquirymgt"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetInquires_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInquires"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_GetInquires_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInquiresResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_GetInquiresBystaffmember_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInquiresBystaffmember"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_GetInquiresBystaffmember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInquiresBystaffmemberResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_AddInquires_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInquires"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_AddInquires_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInquiresResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_RespondToInquires_InputMessage">
+    <wsdl:part name="parameters" element="tns:RespondToInquires"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_RespondToInquires_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RespondToInquiresResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteInquire_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInquire"/>
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteInquire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInquireResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetInquires">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetInquires" message="tns:IService1_GetInquires_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetInquiresResponse" message="tns:IService1_GetInquires_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetInquiresBystaffmember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetInquiresBystaffmember" message="tns:IService1_GetInquiresBystaffmember_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetInquiresBystaffmemberResponse" message="tns:IService1_GetInquiresBystaffmember_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddInquires">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddInquires" message="tns:IService1_AddInquires_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddInquiresResponse" message="tns:IService1_AddInquires_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="RespondToInquires">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RespondToInquires" message="tns:IService1_RespondToInquires_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RespondToInquiresResponse" message="tns:IService1_RespondToInquires_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInquire">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteInquire" message="tns:IService1_DeleteInquire_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteInquireResponse" message="tns:IService1_DeleteInquire_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetInquires">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetInquires" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInquiresBystaffmember">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetInquiresBystaffmember" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInquires">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddInquires" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RespondToInquires">
+      <soap:operation soapAction="http://tempuri.org/IService1/RespondToInquires" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInquire">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteInquire" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://prabashm-001-site1.btempurl.com/Service1.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Inquirymgt"/>
+  <xs:element name="GetInquires">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInquiresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInquiresResult" nillable="true" type="q1:ArrayOfInquiry" xmlns:q1="http://schemas.datacontract.org/2004/07/Inquirymgt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInquiresBystaffmember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignedEmpNo" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInquiresBystaffmemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInquiresBystaffmemberResult" nillable="true" type="q2:ArrayOfInquiry" xmlns:q2="http://schemas.datacontract.org/2004/07/Inquirymgt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInquires">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="newinquiry" nillable="true" type="q3:AddInquiryRequest" xmlns:q3="http://schemas.datacontract.org/2004/07/Inquirymgt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInquiresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddInquiresResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RespondToInquires">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="resp" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="InquiryID" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RespondToInquiresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RespondToInquiresResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInquire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InquiryID" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInquireResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteInquireResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inquirymgt" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/Inquirymgt">
+  <xs:complexType name="ArrayOfInquiry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Inquiry" nillable="true" type="tns:Inquiry"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInquiry" nillable="true" type="tns:ArrayOfInquiry"/>
+  <xs:complexType name="Inquiry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssignedEmpNo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="InquiryDes" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="InquiryID" type="xs:int"/>
+      <xs:element minOccurs="0" name="InquiryResp" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="Isdeleted" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LastModifiedDateTime" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="LogInfo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inquiry" nillable="true" type="tns:Inquiry"/>
+  <xs:complexType name="AddInquiryRequest">
+    <xs:sequence>
+      <xs:element name="AssignedEmpNo" nillable="true" type="xs:string"/>
+      <xs:element name="InquiryDes" nillable="true" type="xs:string"/>
+      <xs:element name="IsActive" type="xs:boolean"/>
+      <xs:element name="Isdeleted" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LogInfo" nillable="true" type="xs:string"/>
+      <xs:element name="MemberId" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddInquiryRequest" nillable="true" type="tns:AddInquiryRequest"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://prabashm-001-site1.btempurl.com/Service1.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint></con:endpoints><con:operation id="1d9b41fe-1010-41e2-b3cf-f1a57838325c" isOneWay="false" action="http://tempuri.org/IService1/AddInquires" name="AddInquires" bindingOperationName="AddInquires" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3b489f8e-a90d-46c8-b59f-9a4f0c16d558" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:inq="http://schemas.datacontract.org/2004/07/Inquirymgt">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddInquires>\r
+         <!--Optional:-->\r
+         <tem:newinquiry>\r
+            <inq:AssignedEmpNo>8019</inq:AssignedEmpNo>\r
+            <inq:InquiryDes>Madolduva book available ?</inq:InquiryDes>\r
+            <inq:IsActive>1</inq:IsActive>\r
+            <inq:Isdeleted>0</inq:Isdeleted>\r
+            <!--Optional:-->\r
+            <inq:LogInfo></inq:LogInfo>\r
+            <inq:MemberId>M002</inq:MemberId>\r
+         </tem:newinquiry>\r
+      </tem:AddInquires>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IService1/AddInquires"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9e70738e-e3bd-4b02-9b31-d67ba597b3da" isOneWay="false" action="http://tempuri.org/IService1/DeleteInquire" name="DeleteInquire" bindingOperationName="DeleteInquire" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e94daa38-1b2b-4c43-be21-7af24026988d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteInquire>\r
+         <!--Optional:-->\r
+         <tem:InquiryID>1</tem:InquiryID>\r
+      </tem:DeleteInquire>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IService1/DeleteInquire"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4d8640c0-5cb8-40b6-99f8-3f2516b5db56" isOneWay="false" action="http://tempuri.org/IService1/GetInquires" name="GetInquires" bindingOperationName="GetInquires" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3a347f3-ae2d-4e0e-a865-4587588b3698" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetInquires/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IService1/GetInquires"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d8dd85c5-6188-4fe8-992f-ff1da8528a47" isOneWay="false" action="http://tempuri.org/IService1/GetInquiresBystaffmember" name="GetInquiresBystaffmember" bindingOperationName="GetInquiresBystaffmember" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2f2c25e3-bbcc-4276-b889-1c786cf59829" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetInquiresBystaffmember>\r
+         <!--Optional:-->\r
+         <tem:assignedEmpNo>8019</tem:assignedEmpNo>\r
+      </tem:GetInquiresBystaffmember>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IService1/GetInquiresBystaffmember"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="8bce1d93-07bb-4ce9-ae1b-e7172dd3fe1f" isOneWay="false" action="http://tempuri.org/IService1/RespondToInquires" name="RespondToInquires" bindingOperationName="RespondToInquires" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="60b76b5c-c986-4426-8795-816a62b1a830" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://prabashm-001-site1.btempurl.com/Service1.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:RespondToInquires>\r
+         <!--Optional:-->\r
+         <tem:resp>Yes</tem:resp>\r
+         <!--Optional:-->\r
+         <tem:InquiryID>1</tem:InquiryID>\r
+      </tem:RespondToInquires>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IService1/RespondToInquires"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
