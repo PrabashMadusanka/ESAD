@@ -1,0 +1,12 @@
+{
+  "AddInquires": {
+    "newinquiry": {
+      "AssignedEmpNo": "8019",
+      "InquiryDes": "Madolduva book available ?",
+      "IsActive": "1",
+      "Isdeleted": "0",
+      "LogInfo": "null",
+      "MemberId": "M002"
+    }
+  }
+}

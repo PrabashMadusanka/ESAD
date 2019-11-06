@@ -1,0 +1,6 @@
+{
+  "DeleteInquireResponse": {
+    "-xmlns": "http://tempuri.org/",
+    "DeleteInquireResult": "Sucssefuly removed"
+  }
+}

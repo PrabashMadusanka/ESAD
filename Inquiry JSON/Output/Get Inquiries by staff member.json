@@ -1,0 +1,41 @@
+{
+  "GetInquiresBystaffmemberResponse": {
+    "-xmlns": "http://tempuri.org/",
+    "GetInquiresBystaffmemberResult": {
+      "-xmlns:a": "http://schemas.datacontract.org/2004/07/Inquirymgt",
+      "-xmlns:i": "http://www.w3.org/2001/XMLSchema-instance",
+      "a:Inquiry": [
+        {
+          "a:AssignedEmpNo": "8019",
+          "a:InquiryDes": "Madolduva book available ?",
+          "a:InquiryID": "3",
+          "a:InquiryResp": "No",
+          "a:IsActive": "true",
+          "a:Isdeleted": "false",
+          "a:LastModifiedDateTime": "2019-11-05T21:11:50",
+          "a:MemberId": "M005"
+        },
+        {
+          "a:AssignedEmpNo": "8019",
+          "a:InquiryDes": "Madolduva book available ?",
+          "a:InquiryID": "4",
+          "a:InquiryResp": { "-i:nil": "true" },
+          "a:IsActive": "true",
+          "a:Isdeleted": "false",
+          "a:LastModifiedDateTime": "2019-11-05T21:11:20",
+          "a:MemberId": "M005"
+        },
+        {
+          "a:AssignedEmpNo": "8019",
+          "a:InquiryDes": "Madolduva book available ?",
+          "a:InquiryID": "5",
+          "a:InquiryResp": { "-i:nil": "true" },
+          "a:IsActive": "true",
+          "a:Isdeleted": "false",
+          "a:LastModifiedDateTime": "2019-11-05T21:11:39",
+          "a:MemberId": "M005"
+        }
+      ]
+    }
+  }
+}
