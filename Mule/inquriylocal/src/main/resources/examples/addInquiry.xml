@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:inq="http://schemas.datacontract.org/2004/07/Inquirymgt">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:AddInquires>
+         <!--Optional:-->
+         <tem:newinquiry>
+            <inq:AssignedEmpNo>8019</inq:AssignedEmpNo>
+            <inq:InquiryDes>Madolduva book available ?</inq:InquiryDes>
+            <inq:IsActive>1</inq:IsActive>
+            <inq:Isdeleted>0</inq:Isdeleted>
+            <!--Optional:-->
+            <inq:LogInfo></inq:LogInfo>
+            <inq:MemberId>M005</inq:MemberId>
+         </tem:newinquiry>
+      </tem:AddInquires>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="u" format="json">
+      <types:shape format="weave" example="examples/Get Inquires-1.json"><![CDATA[%dw 2.0
+
+type u = {|
+  GetInquiresResponse: {|
+    "-xmlns": String, 
+    GetInquiresResult: {|
+      "-xmlns:a": String, 
+      "-xmlns:i": String, 
+      "a:Inquiry": Array<{|        "a:AssignedEmpNo": String,         "a:InquiryDes": String,         "a:InquiryID": String,         "a:InquiryResp": String,         "a:IsActive": String,         "a:Isdeleted": String,         "a:LastModifiedDateTime": String,         "a:MemberId": String      |}>
+    |}
+  |}
+|} {"example": "{\"GetInquiresResponse\":{\"-xmlns\":\"http:\/\/tempuri.org\/\",\"GetInquiresResult\":{\"-xmlns:a\":\"http:\/\/schemas.datacontract.org\/2004\/07\/Inquirymgt\",\"-xmlns:i\":\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\",\"a:Inquiry\":[{\"a:AssignedEmpNo\":\"8019\",\"a:InquiryDes\":\"Madolduva book available ?\",\"a:InquiryID\":\"3\",\"a:InquiryResp\":\"No\",\"a:IsActive\":\"true\",\"a:Isdeleted\":\"false\",\"a:LastModifiedDateTime\":\"2019-11-05T21:11:50\",\"a:MemberId\":\"M005\"},{\"a:AssignedEmpNo\":\"8019\",\"a:InquiryDes\":\"Madolduva book available ?\",\"a:InquiryID\":\"4\",\"a:InquiryResp\":{\"-i:nil\":\"true\"},\"a:IsActive\":\"true\",\"a:Isdeleted\":\"false\",\"a:LastModifiedDateTime\":\"2019-11-05T21:11:20\",\"a:MemberId\":\"M005\"},{\"a:AssignedEmpNo\":\"8019\",\"a:InquiryDes\":\"Madolduva book available ?\",\"a:InquiryID\":\"5\",\"a:InquiryResp\":{\"-i:nil\":\"true\"},\"a:IsActive\":\"true\",\"a:Isdeleted\":\"false\",\"a:LastModifiedDateTime\":\"2019-11-05T21:11:39\",\"a:MemberId\":\"M005\"}]}}}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="addPayload" format="xml">
+      <types:example format="xml" element="{http://schemas.datacontract.org/2004/07/Inquirymgt}AssignedEmpNo" location="examples/addInquiry.xml"/>
+    </types:type>
+  </types:catalog>
+</types:mule>

@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "6e9bacac-266a-4fff-ba7f-e7fa6969378b",
+		"name": "MuleSoap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getinquies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/getinquies"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Inquiry by staff member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://tempuri.org/IService1/GetInquiresBystaffmember\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:GetInquiresBystaffmember>\r\n         <!--Optional:-->\r\n         <tem:assignedEmpNo>8019</tem:assignedEmpNo>\r\n      </tem:GetInquiresBystaffmember>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://localhost:8091/getInquiesByStaff"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Inquiry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://tempuri.org/IService1/AddInquires\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\" xmlns:inq=\"http://schemas.datacontract.org/2004/07/Inquirymgt\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:AddInquires>\r\n         <!--Optional:-->\r\n         <tem:newinquiry>\r\n            <inq:AssignedEmpNo>8019</inq:AssignedEmpNo>\r\n            <inq:InquiryDes>ABC book available ?</inq:InquiryDes>\r\n            <inq:IsActive>1</inq:IsActive>\r\n            <inq:Isdeleted>0</inq:Isdeleted>\r\n            <!--Optional:-->\r\n            <inq:LogInfo></inq:LogInfo>\r\n            <inq:MemberId>M005</inq:MemberId>\r\n         </tem:newinquiry>\r\n      </tem:AddInquires>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://prabashm-001-site1.btempurl.com/Service1.svc"
+			},
+			"response": []
+		},
+		{
+			"name": "Respond to inquiry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://tempuri.org/IService1/RespondToInquires\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:RespondToInquires>\r\n         <!--Optional:-->\r\n         <tem:resp>No</tem:resp>\r\n         <!--Optional:-->\r\n         <tem:InquiryID>3</tem:InquiryID>\r\n      </tem:RespondToInquires>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://localhost:8093/respond"
+			},
+			"response": []
+		},
+		{
+			"name": "Set Isdelete=1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"warning": "Value contains invalid newline characters.",
+						"key": "SOAPAction",
+						"value": "\"http://tempuri.org/IService1/DeleteInquire\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:DeleteInquire>\r\n         <!--Optional:-->\r\n         <tem:InquiryID>3</tem:InquiryID>\r\n      </tem:DeleteInquire>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "http://localhost:8094/deleteInquiry"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

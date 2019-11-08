@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<wsc:config name="Web_Service_Consumer_Config" doc:name="Web Service Consumer Config" doc:id="fbab0a3a-df88-44a1-a2d3-78d4f3b1445c" >
+		<wsc:connection wsdlLocation="http://localhost:54832/Service1.svc?wsdl" service="Service1" port="BasicHttpBinding_IService1" address="http://localhost:54832/Service1.svc" />
+	</wsc:config>
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bf7763d9-8cb6-4000-a928-a4bdf3567681" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<wsc:config name="Web_Service_Consumer_Config1" doc:name="Web Service Consumer Config" doc:id="4acc2fb4-ede2-40c2-b770-3d1aaf867a2f" >
+		<wsc:connection wsdlLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?wsdl" service="Service1" port="BasicHttpBinding_IService1" address="http://prabashm-001-site1.btempurl.com/Service1.svc" />
+	</wsc:config>
+	<wsc:config name="Web_Service_Consumer_Config2" doc:name="Web Service Consumer Config" doc:id="6361634e-2e0e-4ee7-8c2e-37ee45e19299" >
+		<wsc:connection wsdlLocation="http://prabashm-001-site1.btempurl.com/Service1.svc?wsdl" service="Service1" port="BasicHttpBinding_IService1" address="http://prabashm-001-site1.btempurl.com/Service1.svc" />
+	</wsc:config>
+	<http:listener-config name="HTTP_Listener_config1" doc:name="HTTP Listener config" doc:id="9e816d38-c2b6-456b-9519-c37021f2307f" >
+		<http:listener-connection host="0.0.0.0" port="8091" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="ec08ad2c-8705-4eb6-ae88-10e27a3cb5ea" >
+		<http:request-connection host="prabashm-001-site1.btempurl.com" />
+	</http:request-config>
+	<http:listener-config name="HTTP_Listener_config2" doc:name="HTTP Listener config" doc:id="3dd959ab-e8cd-4f40-87a8-b5cd965cf59a" >
+		<http:listener-connection host="0.0.0.0" port="8092" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration1" doc:name="HTTP Request configuration" doc:id="a1e4f65a-e6ab-456f-bfe8-f70afa287b9f" >
+		<http:request-connection host="prabashm-001-site1.btempurl.com" />
+	</http:request-config>
+	<http:listener-config name="HTTP_Listener_config3" doc:name="HTTP Listener config" doc:id="222358c1-2f85-427b-a788-49138eb6adc4" >
+		<http:listener-connection host="0.0.0.0" port="8093" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration2" doc:name="HTTP Request configuration" doc:id="76cef439-b89f-4631-8f1e-7ae136bf1107" >
+		<http:request-connection host="prabashm-001-site1.btempurl.com" />
+	</http:request-config>
+	<http:listener-config name="HTTP_Listener_config4" doc:name="HTTP Listener config" doc:id="ea658f43-f786-4c47-9bff-872fad998941" >
+		<http:listener-connection host="0.0.0.0" port="8094" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration3" doc:name="HTTP Request configuration" doc:id="96ab0a70-581b-4b09-be3b-e1ea83d61676" >
+		<http:request-connection host="prabashm-001-site1.btempurl.com" />
+	</http:request-config>
+	<flow name="inquriylocalFlow1" doc:id="76d191cc-385d-45bd-9190-83ec9b9232ea" >
+		<http:listener doc:name="Listener" doc:id="16cabe65-dabc-484c-acf2-891840a53085" config-ref="HTTP_Listener_config" path="/getinquies"/>
+		<wsc:consume operation="GetInquires" doc:name="Consume" doc:id="80a1dec5-9408-4e00-a887-3f8d8f3163ac" config-ref="Web_Service_Consumer_Config1"/>
+	</flow>
+	<flow name="inquriylocalFlow" doc:id="83be4aab-5a1e-4094-8d8a-c3f26ae048b5" >
+		<http:listener doc:name="Listener" doc:id="cf577ef7-914a-49bb-adea-1dd9b45c3ec4" config-ref="HTTP_Listener_config1" path="getInquiesByStaff"/>
+		<logger level="INFO" doc:name="Logger" doc:id="d7aef7ff-5600-41c2-8cf2-fc559bbb8cec" message="#[payload]"/>
+		<http:request method="POST" doc:name="Request" doc:id="40b1d2a1-6964-4b38-92f4-053f1046bdfd" config-ref="HTTP_Request_configuration" path="/Service1.svc">
+			<http:headers ><![CDATA[#[output application/java
+---
+{
+	ContentType:"text/xml",
+	SOAPAction : "http://tempuri.org/IService1/GetInquiresBystaffmember",
+	
+}]]]></http:headers>
+		</http:request>
+		<logger level="INFO" doc:name="Logger" doc:id="9a59caee-d274-49e9-903a-416cb41d4356" message="#[payload]"/>
+	</flow>
+	<flow name="inquriylocalFlow2" doc:id="9ae0ac6c-2ffe-4ad4-b3d5-c668bde37d02" >
+		<http:listener doc:name="Listener" doc:id="fa70fb75-667d-4266-95b4-d2ab317c626b" config-ref="HTTP_Listener_config2" path="addInquiry"/>
+		<http:request method="POST" doc:name="Request" doc:id="5df21a5d-7c43-49fc-b1e0-f62d04f3961a" config-ref="HTTP_Request_configuration1" path="/Service1.svc">
+			<http:headers ><![CDATA[#[output application/java
+---
+{
+	SOAPAction : "http://tempuri.org/IService1/AddInquires",
+	ContentType : "text/xml"
+}]]]></http:headers>
+		</http:request>
+	</flow>
+	<flow name="inquriylocalFlow3" doc:id="d3ba8e2f-1e98-492f-814b-300171ec9c19" >
+		<http:listener doc:name="Listener" doc:id="d42de1dd-f2a1-4279-8bd0-83928c80d353" config-ref="HTTP_Listener_config3" path="respond"/>
+		<http:request method="POST" doc:name="Request" doc:id="0f00954f-f5de-4451-90ad-39e221754cb9" config-ref="HTTP_Request_configuration2" path="/Service1.svc">
+			<http:headers ><![CDATA[#[output application/java
+---
+{
+	SOAPAction : "http://tempuri.org/IService1/RespondToInquires",
+	ContentType : "text/xml"
+}]]]></http:headers>
+		</http:request>
+	</flow>
+	<flow name="inquriylocalFlow4" doc:id="b65fe627-10a1-4c4a-9639-2b54ae8e7a30" >
+		<http:listener doc:name="Listener" doc:id="ab73f77c-d098-44bc-8449-441517627852" config-ref="HTTP_Listener_config4" path="deleteInquiry"/>
+		<http:request method="POST" doc:name="Request" doc:id="7ebcdcf0-320d-42ed-8ef6-1ab844b7091d" config-ref="HTTP_Request_configuration3" path="/Service1.svc">
+			<http:headers ><![CDATA[#[output application/java
+---
+{
+	SOAPAction : "http://tempuri.org/IService1/DeleteInquire",
+	ContentType : "text/xml"
+}]]]></http:headers>
+		</http:request>
+	</flow>
+</mule>

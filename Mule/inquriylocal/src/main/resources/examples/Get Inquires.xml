@@ -1,0 +1,46 @@
+<GetInquiresResult xmlns:a="http://schemas.datacontract.org/2004/07/Inquirymgt" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:Inquiry>
+               <a:AssignedEmpNo>8019</a:AssignedEmpNo>
+               <a:InquiryDes>Madolduva book available ?</a:InquiryDes>
+               <a:InquiryID>3</a:InquiryID>
+               <a:InquiryResp>Yes</a:InquiryResp>
+               <a:IsActive>true</a:IsActive>
+               <a:Isdeleted>false</a:Isdeleted>
+               <a:LastModifiedDateTime>2019-11-06T00:36:14</a:LastModifiedDateTime>
+               <a:LogInfo/>
+               <a:MemberId>M005</a:MemberId>
+            </a:Inquiry>
+            <a:Inquiry>
+               <a:AssignedEmpNo>8019</a:AssignedEmpNo>
+               <a:InquiryDes>Madolduva book available ?</a:InquiryDes>
+               <a:InquiryID>4</a:InquiryID>
+               <a:InquiryResp i:nil="true"/>
+               <a:IsActive>true</a:IsActive>
+               <a:Isdeleted>false</a:Isdeleted>
+               <a:LastModifiedDateTime>2019-11-05T21:11:20</a:LastModifiedDateTime>
+               <a:LogInfo/>
+               <a:MemberId>M005</a:MemberId>
+            </a:Inquiry>
+            <a:Inquiry>
+               <a:AssignedEmpNo>8019</a:AssignedEmpNo>
+               <a:InquiryDes>Madolduva book available ?</a:InquiryDes>
+               <a:InquiryID>5</a:InquiryID>
+               <a:InquiryResp i:nil="true"/>
+               <a:IsActive>true</a:IsActive>
+               <a:Isdeleted>false</a:Isdeleted>
+               <a:LastModifiedDateTime>2019-11-05T21:11:39</a:LastModifiedDateTime>
+               <a:LogInfo/>
+               <a:MemberId>M005</a:MemberId>
+            </a:Inquiry>
+            <a:Inquiry>
+               <a:AssignedEmpNo>80197</a:AssignedEmpNo>
+               <a:InquiryDes>Madolduva book available ?</a:InquiryDes>
+               <a:InquiryID>6</a:InquiryID>
+               <a:InquiryResp i:nil="true"/>
+               <a:IsActive>true</a:IsActive>
+               <a:Isdeleted>false</a:Isdeleted>
+               <a:LastModifiedDateTime>2019-11-06T00:25:37</a:LastModifiedDateTime>
+               <a:LogInfo/>
+               <a:MemberId>M002</a:MemberId>
+            </a:Inquiry>
+         </GetInquiresResult>
