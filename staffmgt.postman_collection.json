@@ -2,11 +2,11 @@
 	"info": {
 		"_postman_id": "e3bcc76c-c186-41c4-b79a-55782ec13755",
 		"name": "staffmgt",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost/staffmgt/Staffmember/addStaffMember",
+			"name": "add Staff",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -26,26 +26,13 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addStaffMember",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"addStaffMember"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addStaffMember",
 				"description": "Add staff member"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost/staffmgt/Staffmember/addDesignation",
+			"name": "Add designation",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -65,26 +52,13 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addDesignation",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"addDesignation"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/addDesignation",
 				"description": "Add Designation to the system"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost/staffmgt/Staffmember/updateStaffMember",
+			"name": "Update staff Member",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -104,72 +78,33 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/updateStaffMember",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"updateStaffMember"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/updateStaffMember",
 				"description": "Update Staff member, to delete update isdeleted flag to 1"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost/staffmgt/Staffmember/selectAllStaffMember",
+			"name": "selectAllStaffMember",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllStaffMember",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"selectAllStaffMember"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllStaffMember",
 				"description": "Get all isdeleted=0 staff members"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost/staffmgt/Staffmember/selectAllDesignation",
+			"name": "selectAllDesignation",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllDesignation",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"selectAllDesignation"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/selectAllDesignation",
 				"description": "get all not deleted designations"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost/staffmgt/Staffmember/deleteStaffMember",
+			"name": "deleteStaffMember",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -189,21 +124,33 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/deleteStaffMember",
-					"protocol": "https",
-					"host": [
-						"prabashmadusankasl",
-						"000webhostapp",
-						"com"
-					],
-					"path": [
-						"staffmgt",
-						"Staffmember",
-						"deleteStaffMember"
-					]
-				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/deleteStaffMember",
 				"description": "permanent delete the staff member"
+			},
+			"response": []
+		},
+		{
+			"name": "Get staff by library",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"LibraryId\":\"5dc50f824d2ea3094e15fdc5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://prabashmadusankasl.000webhostapp.com/staffmgt/Staffmember/getStaffMemberByLib"
 			},
 			"response": []
 		}
